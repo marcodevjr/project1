@@ -1,0 +1,189 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #fffcfc;
+}
+
+.topo {
+    background-image: url("../images/backgounrd-topo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topo-logo {
+    padding: 2%;
+    margin-left: 15%;
+    width: 20%;
+}
+
+.bg-menu {
+    background: #f1f1f1;
+    text-transform: uppercase;
+}
+
+.menu-itens {
+    color: #443e3e;
+    font-weight: 700;
+    margin: 0%;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.menu-itens:hover {
+    color: #443e3e;
+    font-weight: 700;
+    margin: 0%;
+    border-bottom: 2px solid #000;
+}
+
+.section-desc {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.dashboard-home {
+    background: #b1b9b5;
+    padding: 5%;
+    width: 400px;
+    height: 150px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.dashboard-home:hover {
+    background: #cadb2a;
+    -webkit-box-shadow: 2px -2px 75px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px -2px 75px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px -2px 75px -13px rgba(0, 0, 0, 0.75);
+}
+
+.dashboard-img {
+    position: absolute;
+    width: 14%;
+    right: 18%;
+    top: 36%;
+}
+
+.title-1 {
+    font-size: 14pt;
+    font-weight: 700;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.desc-1 {
+    font-size: 30pt;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer {
+    padding: 2%;
+    background: #00a850;
+    text-align: center;
+}
+
+.footer-copyright {
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-logo1 {
+    width: 60%;
+}
+
+.footer-logo2 {
+    width: 20%;
+}
+
+/*Estoque*/
+
+.estoque-link {
+    color: #000;
+    font-weight: 700;
+}
+
+.estoque-link:hover {
+    color: #00a850;
+}
+
+.piscina {
+    width: 25%;
+    padding: 2%;
+    background: #e4e4e4;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    border: 2px solid #ccc;
+}
+
+.piscina-element {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.piscina-item {
+    padding: 12px;
+    width: 50px;
+    color: #fff;
+    height: 50px;
+    background: #39d684;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.piscina-item:hover {
+    background: #279c5f;
+}
+
+
+.estoque {
+    width: 25%;
+    padding: 2%;
+    background: #e4e4e4;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    border: 2px solid #ccc;
+}
+
+.estoque-element {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.estoque-item {
+    padding: 12px;
+    width: 50px;
+    border-radius: 68px;
+    color: #fff;
+    height: 50px;
+    background: #39d684;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.estoque-item:hover {
+    background: #279c5f;
+}
+
+.btn-elemento {
+    background: #279c5f;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2px solid #279c5f;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-elemento:hover {
+    background: transparent;
+    color: #279c5f
+}

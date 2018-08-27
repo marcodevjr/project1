@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controle e Gerenciamento de ECIs</title>
+    <link href="Content/styles/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Content/styles/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <a href="index.html"><img class="topo-logo" src="Content/images/logo.png" alt="EletroNuclear"></a>
+        </div>
+        <div>
+            <nav class="align-middle navbar navbar-expand bg-menu">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul style="display: flex; margin: 0 auto;" class="navbar-nav mr-auto">
+                        <a href="monitoramento.html" class="menu-itens nav-item active nav-link">Monitoramento</a>
+                        <a href="estoque.html" class="menu-itens nav-item active nav-link">Estoque</a>
+                        <a href="manobra.html" class="menu-itens nav-item active nav-link">Manobra</a>
+                        <a href="historico.html" class="menu-itens nav-item active nav-link">Histórico de Operação</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div style="justify-content: center; padding-bottom: 6%; padding-top: 3%;" class="container">
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <h5 style=" font-size: 23pt; padding-bottom: 3%; font-weight: 700;">Nova Manobra</h5>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasicTypeTour">Elemento</label>
+                        <div class="col-md-4">
+                            <select id="selectbasicTypeTour" name="selectbasicTypeTour" class="form-control">
+                                <option value="1">Elemento Exemplo</option>
+                                <option value="2">Elemento Exemplo</option>
+                                <option value="3">Elemento Exemplo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasicCountry">Posição</label>
+                        <div class="col-md-4">
+                            <select id="selectbasicCountry" name="selectbasicCountry" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasicTransport">Horário</label>
+                        <div class="col-md-4">
+                            <select id="selectbasicTransport" name="selectbasicTransport" class="form-control">
+                                <option value="1">Matutino</option>
+                                <option value="2">Noturno</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasicHotel">Grupo de Elementos</label>
+                        <div class="col-md-4">
+                            <select id="selectbasicHotel" name="selectbasicHotel" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasicFoodComplex">Canister</label>
+                        <div class="col-md-4">
+                            <select id="selectbasicFoodComplex" name="selectbasicFoodComplex" class="form-control">
+                                <option value="1">Modelo XX</option>
+                                <option value="2">Modelo YY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="buttonSelect"></label>
+                        <div class="col-md-8">
+                            <button id="buttonSelect" name="buttonSelect" class="btn btn-info">Cadastrar Mais</button>
+                            <button id="buttonDiscount" name="buttonDiscount" class="btn btn-success">Finalizar</button>
+                            <!-- <button id="buttonCreateTour" name="buttonCreateTour" class="btn btn-warning">Create tour</button> -->
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"><img class="footer-logo1" src="Content/images/logo-white.png" alt="EletroNuclear"></div>
+                    <div style="padding-top: 2%;" class="col-sm-6"><span class="footer-copyright">Pesquisa Desenvolvida por
+                            Rafaela
+                        </span></div>
+                    <div class="col-sm-3"><img class="footer-logo2" src="Content/images/log-ufrj.png" alt="UFRJ"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="Scripts/main.js"></script>
+
+</html>
